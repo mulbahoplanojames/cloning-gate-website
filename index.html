@@ -238,7 +238,9 @@
     </header>
 
     <!-- Hero section -->
-    <div class="relative md:pt-[20rem] pt-[26rem] md:pb-[5rem] pb-[3rem] px-6">
+    <section
+      class="relative md:pt-[20rem] pt-[26rem] md:pb-[5rem] pb-[3rem] px-6"
+    >
       <picture class="w-full h-full absolute top-0 left-0">
         <source media="(min-width: 768px)" srcset="./public/hero.webp" />
         <source media="(min-width: 754px)" srcset="./public/hero.webp" />
@@ -285,6 +287,97 @@
           </svg>
         </a>
       </div>
-    </div>
+    </section>
+
+    <!-- Search Courses Section  -->
+    <form class="bg-[#222a58] text-white px-6 py-10">
+      <div class="container mx-auto">
+        <fieldset class="grid md:grid-cols-5 grid-cols-1 gap-x-10 items-center">
+          <div
+            class="label lg:col-span-4 md:col-span-5 w-full flex md:flex-row flex-col items-center md:gap-3 gap-y-5"
+          >
+            <label for="" class="font-bold text-xl md:w-52 inline-block w-full"
+              >Find Your Course</label
+            >
+            <div class="flex md:gap-4 gap-0 w-full">
+              <input
+                type="text"
+                class="flex-1 bg-white h-14 text-black px-4 outline-none"
+              />
+              <button class="border-1 border-white px-8 py-2">Search</button>
+            </div>
+          </div>
+
+          <div class="lg:flex flex-col gap-2 s hidden">
+            <a href="" class="text-lg underline">Search by A-Z</a>
+            <a href="" class="text-lg underline">Search by subjects</a>
+          </div>
+        </fieldset>
+
+        <fieldset
+          class="md:mx-auto flex md:items-center items-start md:justify-center justify-start mt-4 md:gap-8 gap-3 md:flex-row flex-col"
+        >
+          <label for="Undergraduate" class="text-lg font-semibold flex gap-3">
+            <input
+              type="radio"
+              name="level"
+              id="Undergraduate"
+              class="scale-200 accent-[#222a58]"
+            />
+            Undergraduate
+          </label>
+          <label
+            for="Postgraduate-taught"
+            class="text-lg font-semibold flex gap-3"
+          >
+            <input
+              type="radio"
+              name="level"
+              id="Postgraduate-taught"
+              class="scale-200 accent-[#222a58]"
+            />
+            Postgraduate taught</label
+          >
+          <label
+            for="Postgraduate-ressearch"
+            class="text-lg font-semibold flex gap-3"
+          >
+            <input
+              type="radio"
+              name="level"
+              id="Postgraduate-ressearch "
+              class="scale-200 accent-[#222a58]"
+            />
+            Postgraduate research
+          </label>
+        </fieldset>
+      </div>
+    </form>
+
+    <!-- Discover Section  -->
+    <section class="px-6 py-14">
+      <h1 class="font-bold text-4xl pb-7">
+        Discover the University of Liverpool
+      </h1>
+
+      <!-- card  -->
+      <div class="grid lg:grid-cols-5 md:grid-cols-1 gap-6">
+        <div class="bg-red-300 lg:col-span-2 p-20 lg:block hidden"></div>
+        <div class="bg-green-300 lg:col-span-3 p-4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sit
+          accusamus voluptatibus similique quis? Ipsa mollitia ab qui beatae
+          aspernatur? Tempore dicta tenetur, necessitatibus repellat quasi
+          provident, tempora eius quas odit commodi nesciunt iste laborum sed
+          pariatur assumenda, dolor nisi? Blanditiis quam recusandae nihil quod?
+          Harum modi perferendis soluta at tempora excepturi dignissimos,
+          praesentium sint, repellendus voluptatem ea officia similique
+          molestias, voluptate dicta porro officiis fuga vel eius enim. Maiores
+          fugit accusantium quod doloremque quasi minus quos ipsa itaque
+          necessitatibus, hic accusamus sequi praesentium molestias, optio
+          impedit facilis error rerum fugiat possimus saepe? Inventore laborum
+          maxime vel nihil quos. Officia.
+        </div>
+      </div>
+    </section>
   </body>
 </html>
