@@ -237,253 +237,299 @@
       </nav>
     </header>
 
-    <!-- Hero section -->
-    <section
-      class="relative md:pt-[20rem] pt-[26rem] md:pb-[5rem] pb-[3rem] px-6"
-    >
-      <picture class="w-full h-full absolute top-0 left-0">
-        <source media="(min-width: 768px)" srcset="./public/hero.webp" />
-        <source media="(min-width: 754px)" srcset="./public/hero.webp" />
-        <img
-          src="./public/hero-medium.webp"
-          alt="An image of a cat"
-          class="w-full h-full object-center object-cover"
-        />
-      </picture>
+    <main>
+      <!-- Hero section -->
+      <section
+        class="relative md:pt-[20rem] pt-[26rem] md:pb-[5rem] pb-[3rem] px-6"
+      >
+        <picture class="w-full h-full absolute top-0 left-0">
+          <source media="(min-width: 768px)" srcset="./public/hero.webp" />
+          <source media="(min-width: 754px)" srcset="./public/hero.webp" />
+          <img
+            src="./public/hero-medium.webp"
+            alt="An image of a cat"
+            class="w-full h-full object-center object-cover"
+          />
+        </picture>
 
-      <div class="z-30 relative">
-        <h1
-          class="text-4xl font-bold border-white border-t-2 border-l-2 border-r-2 p-4 w-fit uppercase text-white"
-        >
-          Make 2026 your year
-        </h1>
-        <h2
-          class="text-white text-xl max-w-2xl border-2 border-white p-4 font-semibold basis-full mb-8"
-        >
-          We offer a range of master’s courses in business and management,
-          allied health, computer science and engineering all available to start
-          in January 2026.
-        </h2>
-        <a
-          href="#"
-          class="inline-flex items-center gap-2 text-white font-semibold text-lg group border-2 border-white px-6 py-3 transition-colors duration-300 ease-in-out md:w-fit w-full justify-center"
-        >
-          <span class="group-hover:underline"
-            >Discover our January courses
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-right-icon lucide-chevron-right"
+        <div class="z-30 relative">
+          <h1
+            class="text-4xl font-bold border-white border-t-2 border-l-2 border-r-2 p-4 w-fit uppercase text-white"
           >
-            <path d="m9 18 6-6-6-6" />
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- Search Courses Section  -->
-    <form class="bg-[#222a58] text-white md:px-6 px-1 py-10">
-      <div class="container mx-auto">
-        <fieldset class="grid md:grid-cols-5 grid-cols-1 gap-x-10 items-center">
-          <div
-            class="label lg:col-span-4 md:col-span-5 w-full flex md:flex-row flex-col items-center md:gap-3 gap-y-5"
+            Make 2026 your year
+          </h1>
+          <h2
+            class="text-white text-xl max-w-2xl border-2 border-white p-4 font-semibold basis-full mb-8"
           >
-            <label for="" class="font-bold text-xl md:w-52 inline-block w-full"
-              >Find Your Course</label
+            We offer a range of master’s courses in business and management,
+            allied health, computer science and engineering all available to
+            start in January 2026.
+          </h2>
+          <a
+            href="#"
+            class="inline-flex items-center gap-2 text-white font-semibold text-lg group border-2 border-white px-6 py-3 transition-colors duration-300 ease-in-out md:w-fit w-full justify-center"
+          >
+            <span class="group-hover:underline"
+              >Discover our January courses
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-right-icon lucide-chevron-right"
             >
-            <div class="flex md:gap-4 gap-0 w-full">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Search Courses Section  -->
+      <form class="bg-[#222a58] text-white md:px-6 px-1 py-10">
+        <div class="container mx-auto">
+          <fieldset
+            class="grid md:grid-cols-5 grid-cols-1 gap-x-10 items-center"
+          >
+            <div
+              class="label lg:col-span-4 md:col-span-5 w-full flex md:flex-row flex-col items-center md:gap-3 gap-y-5"
+            >
+              <label
+                for=""
+                class="font-bold text-xl md:w-52 inline-block w-full"
+                >Find Your Course</label
+              >
+              <div class="flex md:gap-4 gap-0 w-full">
+                <input
+                  type="text"
+                  class="flex-1 bg-white h-14 text-black px-4 outline-none"
+                />
+                <button class="border-1 border-white px-8 py-2">Search</button>
+              </div>
+            </div>
+
+            <div class="lg:flex flex-col gap-2 s hidden">
+              <a href="" class="text-lg underline">Search by A-Z</a>
+              <a href="" class="text-lg underline">Search by subjects</a>
+            </div>
+          </fieldset>
+
+          <fieldset
+            class="md:mx-auto flex md:items-center items-start md:justify-center justify-start mt-4 md:gap-8 gap-3 md:flex-row flex-col"
+          >
+            <label for="Undergraduate" class="text-lg font-semibold flex gap-3">
               <input
-                type="text"
-                class="flex-1 bg-white h-14 text-black px-4 outline-none"
+                type="radio"
+                name="level"
+                id="Undergraduate"
+                class="scale-200 accent-[#222a58]"
               />
-              <button class="border-1 border-white px-8 py-2">Search</button>
+              Undergraduate
+            </label>
+            <label
+              for="Postgraduate-taught"
+              class="text-lg font-semibold flex gap-3"
+            >
+              <input
+                type="radio"
+                name="level"
+                id="Postgraduate-taught"
+                class="scale-200 accent-[#222a58]"
+              />
+              Postgraduate taught</label
+            >
+            <label
+              for="Postgraduate-ressearch"
+              class="text-lg font-semibold flex gap-3"
+            >
+              <input
+                type="radio"
+                name="level"
+                id="Postgraduate-ressearch "
+                class="scale-200 accent-[#222a58]"
+              />
+              Postgraduate research
+            </label>
+          </fieldset>
+        </div>
+      </form>
+
+      <!-- Discover Section  -->
+      <section class="px-6 py-14">
+        <h1 class="font-bold text-4xl pb-7">
+          Discover the University of Liverpool
+        </h1>
+
+        <!-- about card  -->
+        <div class="grid lg:grid-cols-5 md:grid-cols-1 gap-6">
+          <div class="lg:col-span-2 h-80 lg:block hidden overflow-hidden">
+            <img
+              src="./public/contact-us-VGM.jpg.jpeg"
+              alt=""
+              class="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div class="lg:col-span-3">
+            <h2 class="text-xl pb-8">
+              We are the University of Liverpool. Located at the heart of a
+              thrilling world city, we are a dynamic institution of academic
+              excellence and innovation, making a positive impact across the
+              United Kingdom and the wider world.
+            </h2>
+
+            <p class="text-base pb-6">
+              Since 1881, we've been at the forefront of world-class research
+              and education, known for our cutting-edge facilities and
+              relentless pursuit of excellence and achievement. Find out how you
+              can be part of our vibrant community and explore the work we’re
+              doing with our famous home city.
+            </p>
+
+            <div class="flex md:flex-row flex-col gap-4">
+              <a
+                href="#"
+                class="border px-6 py-3 text-lg hover:underline text-center"
+                >Learn about us</a
+              >
+              <a
+                href="#"
+                class="border px-6 py-3 text-lg hover:underline text-center"
+                >Liverpool: Our city, our inspiration
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- study card  -->
+      <section class="lg:px-6">
+        <div class="grid lg:grid-cols-6 grid-cols-1 mt-12 lg:mb-12">
+          <div
+            class="bg-[#222a58] text-white lg:px-14 lg:py-20 md:px-8 px-5 py-8 md:col-span-4 lg:order-first order-last"
+          >
+            <h1 class="lg:text-3xl md:text-2xl text-xl font-bold pb-3">
+              Study with us
+            </h1>
+            <p class="md:text-lg text-base">
+              Discover endless possibilities. We offer a range of courses with
+              support and expertise to help you succeed in your future career.
+              Find your perfect course, explore our subject areas or discover
+              everything you need to know about studying with us.
+            </p>
+
+            <div class="flex md:flex-row flex-col flex-wrap gap-4 mt-4">
+              <a
+                href="#"
+                class="border px-6 py-3 text-lg hover:underline text-center"
+                >Undergraduate</a
+              >
+              <a
+                href="#"
+                class="border px-6 py-3 text-lg hover:underline text-center"
+                >Masters</a
+              >
+              <a
+                href="#"
+                class="border px-6 py-3 text-lg hover:underline text-center"
+              >
+                Postgraduate research</a
+              >
+              <a
+                href="#"
+                class="border px-6 py-3 text-lg hover:underline text-center"
+                >Continuing Professional Development
+              </a>
+              <a
+                href="#"
+                class="border px-6 py-3 text-lg hover:underline text-center"
+                >International students
+              </a>
+            </div>
+          </div>
+          <div
+            class="lg:h-full w-full md:h-[28rem] h-[19rem] md:col-span-2 overflow-hidden"
+          >
+            <img
+              src="./public/68d896bb-735d-43ce-b168-604e36cc358d.webp"
+              alt="two students talking"
+              class="w-full h-full object-cover object-center"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- book seat card  -->
+      <section class="lg:px-6">
+        <div
+          class="bg-[#ee4270] px-4 py-6 flex justify-center gap-4 items-center lg:flex-row flex-col"
+        >
+          <div
+            class="flex gap-6 md:basis-full flex-1 sm:flex-nowrap sm:items-start justify-center flex-wrap"
+          >
+            <div class="w-44 h-20 overflow-hidden">
+              <img
+                src="./public/conversation.png"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="text-white md:flex-row flex-col flex gap-4 items-start justify-center sm:text-left text-center"
+            >
+              <h1 class="text-4xl font-bold">Undergraduate open events</h1>
+              <p class="text-2xl">
+                Meet us online at our Undergraduate Online Open Week to find out
+                more about studying a degree at Liverpool.
+              </p>
             </div>
           </div>
 
-          <div class="lg:flex flex-col gap-2 s hidden">
-            <a href="" class="text-lg underline">Search by A-Z</a>
-            <a href="" class="text-lg underline">Search by subjects</a>
-          </div>
-        </fieldset>
-
-        <fieldset
-          class="md:mx-auto flex md:items-center items-start md:justify-center justify-start mt-4 md:gap-8 gap-3 md:flex-row flex-col"
-        >
-          <label for="Undergraduate" class="text-lg font-semibold flex gap-3">
-            <input
-              type="radio"
-              name="level"
-              id="Undergraduate"
-              class="scale-200 accent-[#222a58]"
-            />
-            Undergraduate
-          </label>
-          <label
-            for="Postgraduate-taught"
-            class="text-lg font-semibold flex gap-3"
-          >
-            <input
-              type="radio"
-              name="level"
-              id="Postgraduate-taught"
-              class="scale-200 accent-[#222a58]"
-            />
-            Postgraduate taught</label
-          >
-          <label
-            for="Postgraduate-ressearch"
-            class="text-lg font-semibold flex gap-3"
-          >
-            <input
-              type="radio"
-              name="level"
-              id="Postgraduate-ressearch "
-              class="scale-200 accent-[#222a58]"
-            />
-            Postgraduate research
-          </label>
-        </fieldset>
-      </div>
-    </form>
-
-    <!-- Discover Section  -->
-    <section class="px-6 py-14">
-      <h1 class="font-bold text-4xl pb-7">
-        Discover the University of Liverpool
-      </h1>
-
-      <!-- about card  -->
-      <div class="grid lg:grid-cols-5 md:grid-cols-1 gap-6">
-        <div class="lg:col-span-2 h-80 lg:block hidden overflow-hidden">
-          <img
-            src="./public/contact-us-VGM.jpg.jpeg"
-            alt=""
-            class="w-full h-full object-cover object-center"
-          />
-        </div>
-        <div class="lg:col-span-3">
-          <h2 class="text-xl pb-8">
-            We are the University of Liverpool. Located at the heart of a
-            thrilling world city, we are a dynamic institution of academic
-            excellence and innovation, making a positive impact across the
-            United Kingdom and the wider world.
-          </h2>
-
-          <p class="text-base pb-6">
-            Since 1881, we've been at the forefront of world-class research and
-            education, known for our cutting-edge facilities and relentless
-            pursuit of excellence and achievement. Find out how you can be part
-            of our vibrant community and explore the work we’re doing with our
-            famous home city.
-          </p>
-
-          <div class="flex md:flex-row flex-col gap-4">
-            <a
-              href="#"
-              class="border px-6 py-3 text-lg hover:underline text-center"
-              >Learn about us</a
+          <div class="bg-blue-500">
+            <button
+              class="bg-[#222a58]/90 hover:bg-[#222a58] text-white py-3 lg:px-4 px-4 md:px-1 text-lg w-[15rem] md:w-[11rem] lg:w-[13rem] font-bold hover:underline cursor-pointer"
             >
-            <a
-              href="#"
-              class="border px-6 py-3 text-lg hover:underline text-center"
-              >Liverpool: Our city, our inspiration
-            </a>
+              Book your place
+            </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- study card  -->
-      <div class="grid lg:grid-cols-6 grid-cols-1 mt-12 md:mb-12">
+      <!-- Fellowship  card  -->
+      <section class="px-6 mb-20">
         <div
-          class="bg-[#222a58] text-white lg:px-14 lg:py-20 md:px-8 px-5 py-8 md:col-span-4 lg:order-first order-last"
+          class="grid lg:grid-cols-2 grid-cols-1 lg:mt-8 bg-[#222a58] lg:p-0 p-6"
         >
-          <h1 class="lg:text-3xl md:text-2xl text-xl font-bold pb-3">
-            Study with us
-          </h1>
-          <p class="md:text-lg text-base">
-            Discover endless possibilities. We offer a range of courses with
-            support and expertise to help you succeed in your future career.
-            Find your perfect course, explore our subject areas or discover
-            everything you need to know about studying with us.
-          </p>
-
-          <div class="flex md:flex-row flex-col flex-wrap gap-4 mt-4">
-            <a
-              href="#"
-              class="border px-6 py-3 text-lg hover:underline text-center"
-              >Undergraduate</a
-            >
-            <a
-              href="#"
-              class="border px-6 py-3 text-lg hover:underline text-center"
-              >Masters</a
-            >
-            <a
-              href="#"
-              class="border px-6 py-3 text-lg hover:underline text-center"
-            >
-              Postgraduate research</a
-            >
-            <a
-              href="#"
-              class="border px-6 py-3 text-lg hover:underline text-center"
-              >Continuing Professional Development
-            </a>
-            <a
-              href="#"
-              class="border px-6 py-3 text-lg hover:underline text-center"
-              >International students
-            </a>
+          <div class="lg:h-[23rem] h-[25rem] overflow-hidden">
+            <img
+              src="./public/castle.webp"
+              alt="two students talking"
+              class="w-full h-full object-cover object-center"
+            />
           </div>
-        </div>
-        <div
-          class="lg:h-full w-full md:h-[28rem] h-[19rem] md:col-span-2 overflow-hidden"
-        >
-          <img
-            src="./public/68d896bb-735d-43ce-b168-604e36cc358d.webp"
-            alt="two students talking"
-            class="w-full h-full object-cover object-center"
-          />
-        </div>
-      </div>
-
-      <!-- book seat card  -->
-      <div
-        class="bg-[#ee4270] px-4 py-6 flex justify-center gap-4 items-center md:flex-row flex-col"
-      >
-        <div
-          class="flex gap-6 md:basis-full flex-1 sm:flex-nowrap sm:items-start justify-center flex-wrap"
-        >
-          <div class="w-44 h-20 overflow-hidden">
-            <img src="./public/conversation.png" class="w-full h-full" alt="" />
-          </div>
-          <div
-            class="text-white md:flex-row flex-col flex gap-4 items-start justify-center sm:text-left text-center"
-          >
-            <h1 class="text-4xl font-bold">Undergraduate open events</h1>
-            <p class="text-2xl">
-              Meet us online at our Undergraduate Online Open Week to find out
-              more about studying a degree at Liverpool.
+          <div class="text-white lg:px-14 lg:py-16 py-8">
+            <h1 class="lg:text-3xl md:text-2xl text-xl font-bold pb-3">
+              University of Liverpool Fellowships
+            </h1>
+            <p class="md:text-lg text-base">
+              Do you have an original and compelling vision for harnessing the
+              power of AI for research? Apply for one of our research
+              fellowships and bring it to life at Liverpool.
             </p>
+            <div class="w-full mt-6">
+              <a
+                href="#"
+                class="border px-6 py-4 text-lg hover:underline text-center"
+                >Apply Now</a
+              >
+            </div>
           </div>
         </div>
-
-        <div class="bg-blue-500">
-          <button
-            class="bg-[#222a58]/90 hover:bg-[#222a58] text-white py-3 lg:px-4 px-4 md:px-1 text-lg w-[15rem] md:w-[11rem] lg:w-[15rem] font-bold hover:underline cursor-pointer"
-          >
-            Book your place
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
