@@ -8,11 +8,238 @@
     <title>cloning-gate-website</title>
   </head>
   <body>
-    <header class="grid-rows-2 absolute w-full">
-      <div class="bg-red-50 p-6 w-full"></div>
-      <div class="bg-green-50 p-6 w-full"></div>
+    <header class="grid-rows-2 absolute w-full px-5 py-2">
+      <!-- primary navagation  -->
+      <nav class="w-full flex justify-between items-center">
+        <div class="md:w-48 md:h-20 w-36 h-16 bg-ed-500 overflow-hidden">
+          <img
+            src="/public/logo.svg"
+            alt="Logo"
+            class="w-full h-full object-contain object-center"
+          />
+        </div>
+
+        <menu class="md:inline-flex hidden gap-6 text-base text-white">
+          <li
+            class="hover:border-b-2 border-b-2 border-b-transparent hover:border-b-white"
+          >
+            <a href="/">Home</a>
+          </li>
+          <li
+            class="hover:border-b-2 border-b-2 border-b-transparent hover:border-b-white"
+          >
+            <a href="#">Jobs</a>
+          </li>
+          <li
+            class="hover:border-b-2 border-b-2 border-b-transparent hover:border-b-white"
+          >
+            <a href="">Donate</a>
+          </li>
+          <li
+            class="hover:border-b-2 border-b-2 border-b-transparent hover:border-b-white"
+          >
+            <a href="">A-Z</a>
+          </li>
+          <li
+            class="hover:border-b-2 border-b-2 border-b-transparent hover:border-b-white"
+          >
+            <a href="">Alumni</a>
+          </li>
+          <li
+            class="hover:border-b-2 border-b-2 border-b-transparent hover:border-b-white"
+          >
+            <a href="">Staff</a>
+          </li>
+          <li
+            class="hover:border-b-2 border-b-2 border-b-transparent hover:border-b-white"
+          >
+            <a href="">Students</a>
+          </li>
+        </menu>
+        <div class="md:hidden flex gap-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-search-icon lucide-search"
+          >
+            <path d="m21 21-4.34-4.34" />
+            <circle cx="11" cy="11" r="8" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-text-align-justify-icon lucide-text-align-justify"
+          >
+            <path d="M3 5h18" />
+            <path d="M3 12h18" />
+            <path d="M3 19h18" />
+          </svg>
+        </div>
+      </nav>
+      <!-- secondary navigation -->
+      <nav
+        class="w-full md:inline-flex hidden justify-between items-center pt-3"
+      >
+        <menu class="inline-flex lg:gap-6 gap-3 text-white text-base">
+          <li
+            class="font-bold lg:text-lg text-base flex items-center gap-1 group cursor-pointer"
+          >
+            <span
+              class="group-hover:border-b-2 group-hover:border-b-white border-b-2 border-transparent pb-2 group-hover:pb-2"
+              >Study</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down-icon lucide-chevron-down pb-2 lg:block hidden"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </li>
+
+          <li
+            class="font-bold lg:text-lg text-base flex items-center gap-1 group cursor-pointer"
+          >
+            <span
+              class="group-hover:border-b-2 group-hover:border-b-white border-b-2 border-transparent pb-2 group-hover:pb-2"
+              >Research and Innovation</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down-icon lucide-chevron-down pb-2 lg:block hidden"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </li>
+
+          <li
+            class="font-bold lg:text-lg text-base flex items-center gap-1 group cursor-pointer"
+          >
+            <span
+              class="group-hover:border-b-2 group-hover:border-b-white border-b-2 border-transparent pb-2 group-hover:pb-2"
+              >Student Life</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down-icon lucide-chevron-down pb-2 lg:block hidden"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </li>
+
+          <li
+            class="font-bold lg:text-lg text-base flex items-center gap-1 group cursor-pointer"
+          >
+            <span
+              class="group-hover:border-b-2 group-hover:border-b-white border-b-2 border-transparent pb-2 group-hover:pb-2"
+              >Global</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down-icon lucide-chevron-down pb-2 lg:block hidden"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </li>
+
+          <li
+            class="font-bold lg:text-lg text-base flex items-center gap-1 group cursor-pointer"
+          >
+            <span
+              class="group-hover:border-b-2 group-hover:border-b-white border-b-2 border-transparent pb-2 group-hover:pb-2"
+              >About Us</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down-icon lucide-chevron-down pb-2 lg:block hidden"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </li>
+        </menu>
+
+        <div class="flex gap-3 text-white group cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-search-icon lucide-search"
+          >
+            <path d="m21 21-4.34-4.34" />
+            <circle cx="11" cy="11" r="8" />
+          </svg>
+          <span
+            class="group-hover:border-b-2 border-b-2 group-hover:border-b-white border-b-transparent"
+            >Search the site</span
+          >
+        </div>
+      </nav>
     </header>
 
     <div class="py-44 bg-yellow-400"></div>
   </body>
 </html>
+
+feat: Add the navigation header with responsive design and logo integration - -
+Add new logo SVG file to the public directory - Implement primary and secondary
+- navigation menus with hover effects - Ensure responsiveness for different
+screen - sizes using Tailwind CSS classes
